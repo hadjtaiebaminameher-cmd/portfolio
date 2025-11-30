@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Quizz - Mon site</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+  <div class="container">
+    <h1>Mon site personnel</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="parcours.html">Parcours</a></li>
+        <li><a href="competences.html">Compétences</a></li>
+        <li><a href="experiences.html">Stages</a></li>
+        <li><a href="manifestations.html">Manifestations</a></li>
+        <li><a href="matieres.html">Matières</a></li>
+        <li><a href="passions.html">Passions</a></li>
+        <li><a href="quizz.html">Quizz</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="iit.html">IIT</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="section">
+  <h2>Quizz : Culture générale informatique (10 questions)</h2>
+  <form id="quizForm" class="card">
+  <fieldset>
+    <legend>1. Quel langage est principalement utilisé pour le développement web côté client ?</legend>
+    <label><input type="radio" name="q1" value="Python"> Python</label><br>
+    <label><input type="radio" name="q1" value="JavaScript"> JavaScript</label><br>
+    <label><input type="radio" name="q1" value="C++"> C++</label><br>
+    <label><input type="radio" name="q1" value="SQL"> SQL</label><br>
+  </fieldset>
+  <br/>
+  <fieldset>
+    <legend>2. Que signifie SQL ?</legend>
+    <label><input type="radio" name="q2" value="Structured Query Language"> Structured Query Language</label><br>
+    <label><input type="radio" name="q2" value="Simple Query List"> Simple Query List</label><br>
+    <label><input type="radio" name="q2" value="Sequential Query Language"> Sequential Query Language</label><br>
+    <label><input type="radio" name="q2" value="Secure Query Link"> Secure Query Link</label><br>
+  </fieldset>
+  <br/>
+  <fieldset>
+    <legend>3. Quel protocole est utilisé pour sécuriser les échanges HTTP ?</legend>
+    <label><input type="radio" name="q3" value="FTP"> FTP</label><br>
+    <label><input type="radio" name="q3" value="TLS/SSL"> TLS/SSL</label><br>
+    <label><input type="radio" name="q3" value="SMTP"> SMTP</label><br>
+    <label><input type="radio" name="q3" value="SSH"> SSH</label><br>
+  </fieldset>
+  <br/>
+  <fieldset>
+    <legend>4. Quel système de gestion de base de données est relationnel ?</legend>
+    <label><input type="radio" name="q4" value="MongoDB"> MongoDB</label><br>
+    <label><input type="radio" name="q4" value="Redis"> Redis</label><br>
+    <label><input type="radio" name="q4" value="MySQL"> MySQL</label><br>
+    <label><input type="radio" name="q4" value="Elasticsearch"> Elasticsearch</label><br>
+  </fieldset>
+  <br/>
+  <fieldset>
+    <legend>5. Quel mot décrit une méthode de développement itérative ?</legend>
+    <label><input type="radio" name="q5" value="Waterfall"> Waterfall</label><br>
+    <label><input type="radio" name="q5" value="V-model"> V-model</label><br>
+    <label><input type="radio" name="q5" value="Agile"> Agile</label><br>
+    <label><input type="radio" name="q5" value="VLAN"> VLAN</label><br>
+  </fieldset>
+  <br/>
+  <fieldset>
+    <legend>6. Quel format est utilisé pour structurer des données en texte ?</legend>
+    <label><input type="radio" name="q6" value="PNG"> PNG</label><br>
+    <label><input type="radio" name="q6" value="JSON"> JSON</label><br>
+    <label><input type="radio" name="q6" value="MP3"> MP3</label><br>
+    <label><input type="radio" name="q6" value="ZIP"> ZIP</label><br>
+  </fieldset>
+  <br/>
+  <fieldset>
+    <legend>7. Quel mot décrit l'authentification à deux facteurs ?</legend>
+    <label><input type="radio" name="q7" value="2FA"> 2FA</label><br>
+    <label><input type="radio" name="q7" value="OAuth"> OAuth</label><br>
+    <label><input type="radio" name="q7" value="SAML"> SAML</label><br>
+    <label><input type="radio" name="q7" value="JWT"> JWT</label><br>
+  </fieldset>
+  <br/>
+  <fieldset>
+    <legend>8. Quel élément HTML définit un lien ?</legend>
+    <label><input type="radio" name="q8" value="<img>"> <img></label><br>
+    <label><input type="radio" name="q8" value="<a>"> <a></label><br>
+    <label><input type="radio" name="q8" value="<div>"> <div></label><br>
+    <label><input type="radio" name="q8" value="<link>"> <link></label><br>
+  </fieldset>
+  <br/>
+  <fieldset>
+    <legend>9. Quel framework est côté frontend ?</legend>
+    <label><input type="radio" name="q9" value="Django"> Django</label><br>
+    <label><input type="radio" name="q9" value="Flask"> Flask</label><br>
+    <label><input type="radio" name="q9" value="React"> React</label><br>
+    <label><input type="radio" name="q9" value="Laravel"> Laravel</label><br>
+  </fieldset>
+  <br/>
+  <fieldset>
+    <legend>10. Quelle commande initialise un dépôt Git ? (ligne de commande)</legend>
+    <label><input type="radio" name="q10" value="git start"> git start</label><br>
+    <label><input type="radio" name="q10" value="git init"> git init</label><br>
+    <label><input type="radio" name="q10" value="git create"> git create</label><br>
+    <label><input type="radio" name="q10" value="git new"> git new</label><br>
+  </fieldset>
+  <br/>
+
+    <button type="button" onclick="corriger()">Valider</button>
+  </form>
+
+  <div id="result" class="card" style="display:none;">
+    <h3>Résultat</h3>
+    <p id="score"></p>
+    <div id="reponses"></div>
+  </div>
+</section>
+
+<script>
+  const answers = {
+      "q1": "JavaScript",
+      "q2": "Structured Query Language",
+      "q3": "TLS/SSL",
+      "q4": "MySQL",
+      "q5": "Agile",
+      "q6": "JSON",
+      "q7": "2FA",
+      "q8": "<a>",
+      "q9": "React",
+      "q10": "git init",
+
+};
+
+function corriger(){
+  let score = 0;
+  const total = Object.keys(answers).length;
+  for(const q in answers){
+    const sel = document.querySelector('input[name="'+q+'"]:checked');
+    const val = sel ? sel.value : null;
+    if(val === answers[q]) { score++; }
+  }
+  document.getElementById('score').innerText = "Votre score : " + score + " / " + total;
+  // Show correct answers list
+  let list = "<ol>";
+      list += "<li>Quel langage est principalement utilisé pour le développement web côté client ? — <strong>Réponse : JavaScript</strong></li>";
+      list += "<li>Que signifie SQL ? — <strong>Réponse : Structured Query Language</strong></li>";
+      list += "<li>Quel protocole est utilisé pour sécuriser les échanges HTTP ? — <strong>Réponse : TLS/SSL</strong></li>";
+      list += "<li>Quel système de gestion de base de données est relationnel ? — <strong>Réponse : MySQL</strong></li>";
+      list += "<li>Quel mot décrit une méthode de développement itérative ? — <strong>Réponse : Agile</strong></li>";
+      list += "<li>Quel format est utilisé pour structurer des données en texte ? — <strong>Réponse : JSON</strong></li>";
+      list += "<li>Quel mot décrit l'authentification à deux facteurs ? — <strong>Réponse : 2FA</strong></li>";
+      list += "<li>Quel élément HTML définit un lien ? — <strong>Réponse : <a></strong></li>";
+      list += "<li>Quel framework est côté frontend ? — <strong>Réponse : React</strong></li>";
+      list += "<li>Quelle commande initialise un dépôt Git ? (ligne de commande) — <strong>Réponse : git init</strong></li>";
+
+    list += "</ol>";
+    document.getElementById('reponses').innerHTML = list;
+    document.getElementById('result').style.display = 'block';
+    document.getElementById('result').scrollIntoView({ behavior: 'smooth' });
+  }
+</script>
+
+</body>
+</html>
